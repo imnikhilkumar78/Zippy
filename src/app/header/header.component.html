@@ -1,23 +1,26 @@
-<header class="flex items-center justify-between px-4 py-2 bg-indigo-900">
-  <strong class="text-green-300 font-extrabold">Polyglot</strong>
-  <nav>
-    <a
-      class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
-      routerLink="'/home'"
+<header class="bg-indigo-600">
+  <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
+    <div
+      class="flex w-full items-center justify-between border-b border-indigo-500 py-6 lg:border-none"
     >
-      Home
-    </a>
-    <a
-      class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
-      [routerLink]="'/login'"
-    >
-      Log In
-    </a>
-    <a
-      class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
-      [routerLink]="'/about'"
-    >
-      About
-    </a>
+      <div class="flex items-center">
+        <a [routerLink]="'/home'">
+          <span class="text-green-300 font-extrabold ">Zippy</span>
+        </a>
+      </div>
+      <div class="ml-10 space-x-4">
+        <a
+          [routerLink]="'/login'"
+          class="inline-block rounded-md border border-transparent bg-indigo-500 py-2 px-4 text-base font-medium text-white hover:bg-opacity-75"
+          >Sign in</a
+        >
+        <a
+          [routerLink]="'/about'"
+          class="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+          >About</a
+        >
+      </div>
+    </div>
+
   </nav>
 </header>

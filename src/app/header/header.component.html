@@ -1,16 +1,18 @@
 <header class="flex items-center justify-between px-4 py-2 bg-indigo-900">
   <strong class="text-green-300 font-extrabold">Polyglot</strong>
   <nav>
-    <button
+    <a
       class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
+      routerLink="'/home'"
     >
       Home
-    </button>
-    <button
+    </a>
+    <a
       class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
+      [routerLink]="'/login'"
     >
       Log In
-    </button>
+    </a>
     <a
       class="px-4 py-2 font-bold text-green-300 rounded hover:bg-blue-700"
       [routerLink]="'/about'"
